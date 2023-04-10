@@ -14,9 +14,7 @@ public class Gato
     private String name;
     private Boolean isFluffy;
 
-    public Gato() {
-    }
-
+    public Gato() {}
     public Gato(String name, Boolean isFluffy) {
         this.name = name;
         this.isFluffy = isFluffy;
