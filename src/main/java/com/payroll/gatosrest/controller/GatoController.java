@@ -9,8 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/gatos")
-public class GatoController
-{
+public class GatoController {
     private final GatosRepository repository;
 
     public GatoController(GatosRepository repository) {

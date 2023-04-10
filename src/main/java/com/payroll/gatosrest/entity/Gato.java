@@ -7,14 +7,15 @@ import jakarta.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class Gato
-{
+public class Gato {
     private @Id
     @GeneratedValue Long id;
     private String name;
     private Boolean isFluffy;
 
-    public Gato() {}
+    public Gato() {
+    }
+
     public Gato(String name, Boolean isFluffy) {
         this.name = name;
         this.isFluffy = isFluffy;
