@@ -1,9 +1,10 @@
 
 HELP.md
-.mvn/wrapper/maven-wrapper.*
+!/.gitignore
+!/.mvn/wrapper/maven-wrapper.*
 !**/src/main/**/target/
 !**/src/test/**/target/
-mvnw*
+/mvnw*
 
 # Miscellaneous
 *.java.hsp
