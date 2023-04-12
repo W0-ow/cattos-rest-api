@@ -24,7 +24,6 @@ jmx.log
 derby.log
 
 # Maven artifacts
-pom.xml
 /target/
 
 ### STS ###
