@@ -1,58 +1,7 @@
 
 HELP.md
+.*
 !/.gitignore
-!/.mvn/wrapper/maven-wrapper.*
-!**/src/main/**/target/
-!**/src/test/**/target/
-/mvnw*
-
-# Miscellaneous
-*.java.hsp
-*.sonarj
-*.sw*
-.DS_Store
-build.sh
-integration-repo
-ivy-cache
-argfile*
-activemq-data/
-classes/
-
-# Log files
-jxl.log
-jmx.log
-derby.log
-
-# Maven artifacts
+/.mvn/wrapper/maven-wrapper.*
 /target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out
-test-output
-atlassian-ide-plugin.xml
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
+/mvnw*
