@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PayrollGatosApplication {
+public class PayrollCattosApplication {
     public static void main(String... args) {
-        SpringApplication.run(PayrollGatosApplication.class, args);
+        SpringApplication.run(PayrollCattosApplication.class, args);
     }
 }

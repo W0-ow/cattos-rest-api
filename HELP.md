@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.example.gatos-rest' is invalid and this project uses 'com.example.gatosrest' instead.
+* The original package name 'com.example.cattos-rest' is invalid and this project uses 'com.example.gatosrest' instead.
 
 # Getting Started
 

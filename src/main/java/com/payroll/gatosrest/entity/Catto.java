@@ -7,16 +7,16 @@ import jakarta.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class Gato {
+public class Catto {
     private @Id
     @GeneratedValue Long id;
     private String name;
     private Boolean isFluffy;
 
-    public Gato() {
+    public Catto() {
     }
 
-    public Gato(String name, Boolean isFluffy) {
+    public Catto(String name, Boolean isFluffy) {
         this.name = name;
         this.isFluffy = isFluffy;
     }
@@ -49,10 +49,10 @@ public class Gato {
     public boolean equals(Object obj) {
 
         if (this == obj) return true;
-        if (!(obj instanceof Gato)) return false;
-        Gato gato = (Gato) obj;
+        if (!(obj instanceof Catto)) return false;
+        Catto catto = (Catto) obj;
 
-        return Objects.equals(this.id, gato.id) && Objects.equals(this.name, gato.name) && Objects.equals(this.isFluffy, gato.isFluffy);
+        return Objects.equals(this.id, catto.id) && Objects.equals(this.name, catto.name) && Objects.equals(this.isFluffy, catto.isFluffy);
     }
 
     @Override
