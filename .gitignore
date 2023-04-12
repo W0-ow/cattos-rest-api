@@ -1,11 +1,9 @@
-HELP.md
 
-target/
-!.mvn/wrapper/maven-wrapper.jar
-mvnw
-mvnw.cmd
+HELP.md
+.mvn/wrapper/maven-wrapper.*
 !**/src/main/**/target/
 !**/src/test/**/target/
+mvnw*
 
 # Miscellaneous
 *.java.hsp
