@@ -4,4 +4,3 @@ HELP.md
 !/.gitignore
 /.mvn/wrapper/maven-wrapper.*
 /target/
-/mvnw*
