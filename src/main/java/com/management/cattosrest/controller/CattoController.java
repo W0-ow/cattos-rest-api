@@ -14,7 +14,9 @@ import java.util.List;
 
 @RestController
 public class CattoController {
+
     private final CattoRepository repository;
+
     private final CattoModelAssembler assembler;
 
     public CattoController(CattoRepository repository, CattoModelAssembler assembler) {
