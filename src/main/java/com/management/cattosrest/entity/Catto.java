@@ -8,8 +8,7 @@ import java.util.Objects;
 
 @Entity
 public class Catto {
-    private @Id
-    @GeneratedValue Long id;
+    private @Id @GeneratedValue Long id;
     private String name;
     private Boolean isFluffy;
 
