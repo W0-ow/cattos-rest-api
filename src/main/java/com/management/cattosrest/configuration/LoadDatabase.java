@@ -1,7 +1,7 @@
-package com.payroll.gatosrest.configuration;
+package com.management.cattosrest.configuration;
 
-import com.payroll.gatosrest.entity.Catto;
-import com.payroll.gatosrest.repository.CattoRepository;
+import com.management.cattosrest.repository.CattoRepository;
+import com.management.cattosrest.entity.Catto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

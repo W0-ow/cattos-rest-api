@@ -1,6 +1,6 @@
-package com.payroll.gatosrest.repository;
+package com.management.cattosrest.repository;
 
-import com.payroll.gatosrest.entity.Catto;
+import com.management.cattosrest.entity.Catto;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CattoRepository extends JpaRepository<Catto, Long> {

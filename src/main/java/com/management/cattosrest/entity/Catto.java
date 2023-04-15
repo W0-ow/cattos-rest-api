@@ -1,4 +1,4 @@
-package com.payroll.gatosrest.entity;
+package com.management.cattosrest.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -62,6 +62,6 @@ public class Catto {
 
     @Override
     public String toString() {
-        return "Employee{" + "id=" + this.id + ", name='" + this.name + '\'' + ", isFluffy='" + this.isFluffy + '\'' + '}';
+        return "Catto{" + "id=" + this.id + ", name='" + this.name + '\'' + ", fluffy='" + this.isFluffy + '\'' + '}';
     }
 }

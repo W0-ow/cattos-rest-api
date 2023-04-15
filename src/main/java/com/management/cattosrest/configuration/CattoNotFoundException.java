@@ -1,4 +1,4 @@
-package com.payroll.gatosrest.configuration;
+package com.management.cattosrest.configuration;
 
 public class CattoNotFoundException extends RuntimeException {
     public CattoNotFoundException(Long id) {

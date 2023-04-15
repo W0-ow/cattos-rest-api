@@ -1,9 +1,9 @@
-package com.payroll.gatosrest.controller;
+package com.management.cattosrest.controller;
 
-import com.payroll.gatosrest.configuration.CattoModelAssembler;
-import com.payroll.gatosrest.configuration.CattoNotFoundException;
-import com.payroll.gatosrest.entity.Catto;
-import com.payroll.gatosrest.repository.CattoRepository;
+import com.management.cattosrest.configuration.CattoNotFoundException;
+import com.management.cattosrest.configuration.CattoModelAssembler;
+import com.management.cattosrest.entity.Catto;
+import com.management.cattosrest.repository.CattoRepository;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.IanaLinkRelations;

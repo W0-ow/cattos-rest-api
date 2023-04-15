@@ -1,10 +1,11 @@
-package com.payroll.gatosrest.configuration;
+package com.management.cattosrest.configuration;
 
-import com.payroll.gatosrest.controller.CattoController;
-import com.payroll.gatosrest.entity.Catto;
+import com.management.cattosrest.controller.CattoController;
+import com.management.cattosrest.entity.Catto;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -25,7 +26,7 @@ public class CattoModelAssembler implements RepresentationModelAssembler<Catto, 
     @Override
     public EntityModel<Catto> toModel(Catto catto) {
         return EntityModel.of(catto,
-                linkTo(methodOn(CattoController.class).one(catto.getId())).withSelfRel(),
+                WebMvcLinkBuilder.linkTo(methodOn(CattoController.class).one(catto.getId())).withSelfRel(),
                 linkTo(methodOn(CattoController.class).all()).withRel("all"));
     }
 

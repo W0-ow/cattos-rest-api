@@ -1,11 +1,11 @@
-package com.payroll.gatosrest;
+package com.management.cattosrest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PayrollCattosApplication {
+public class ManagementCattosApplication {
     public static void main(String... args) {
-        SpringApplication.run(PayrollCattosApplication.class, args);
+        SpringApplication.run(ManagementCattosApplication.class, args);
     }
 }

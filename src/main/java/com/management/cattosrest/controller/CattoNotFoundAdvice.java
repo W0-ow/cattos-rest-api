@@ -1,6 +1,6 @@
-package com.payroll.gatosrest.controller;
+package com.management.cattosrest.controller;
 
-import com.payroll.gatosrest.configuration.CattoNotFoundException;
+import com.management.cattosrest.configuration.CattoNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
