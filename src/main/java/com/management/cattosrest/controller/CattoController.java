@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/cattos")
 public class CattoController {
 
     private final CattoRepository repository;
@@ -24,7 +25,7 @@ public class CattoController {
         this.assembler = assembler;
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public CollectionModel<EntityModel<Catto>> all() {
 
         List<Catto> cattos = repository.findAll();
@@ -32,7 +33,7 @@ public class CattoController {
         return assembler.toCollectionModel(cattos);
     }
 
-    @PostMapping("/new")
+    @PostMapping
     public ResponseEntity<EntityModel<Catto>> newCatto(@RequestBody Catto newCatto) {
 
         EntityModel<Catto> entityModel = assembler.toModel(repository.save(newCatto));
@@ -42,7 +43,7 @@ public class CattoController {
                 .body(entityModel);
     }
 
-    @GetMapping("/one/{id}")
+    @GetMapping("/{id}")
     public EntityModel<Catto> one(@PathVariable Long id) {
 
         Catto catto = repository.findById(id).orElseThrow(() -> new CattoNotFoundException(id));
@@ -50,7 +51,7 @@ public class CattoController {
         return assembler.toModel(catto);
     }
 
-    @PutMapping("/edit/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<EntityModel<Catto>> replaceCatto(@RequestBody Catto newCatto, @PathVariable Long id) {
 
         Catto catto = repository.findById(id).map(item -> {
@@ -69,7 +70,7 @@ public class CattoController {
                 .body(entityModel);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<EntityModel<Catto>> deleteCatto(@PathVariable Long id) {
 
         repository.deleteById(id);
