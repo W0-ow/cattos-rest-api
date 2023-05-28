@@ -1,2 +1,2 @@
 # cattos-rest-api
-API REST de pruebas con H2DB y JPA en Spring.
+API RESTful de pruebas con H2DB y JPA en Spring.
